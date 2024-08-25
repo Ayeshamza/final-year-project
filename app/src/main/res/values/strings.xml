@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PlanAndMeet</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_upComingMeetings">Up Coming Meetings</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_logOut">Log Out</string>
+    <string name="join">Join</string>
+    <string name="eventDetailsTitle">Event Details</string>
+    <string name="aboutUsTitle">About Us</string>
+    <string name="createEventTitle">Create Event</string>
+    <string name="chatTitle">Chat</string>
+    <string name="documentsTitle">Documents</string>
+    <string name="uploadDocumentTitle">Upload Document</string>
+    <string name="eventParticipantsTitle">Participants</string>
+    <string name="profileTitle">Profile</string>
+    <string name="commonSlotsTitl">Common Slots</string>
+    <string name="schedulesTitle">Schedules</string>
+    <string name="setScheduleTitle">Set Schedule</string>
+    <string name="upcomingMeetingTitle">Upcoming Meetings</string>
+    <string name="joinEventTitle">Join Event</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

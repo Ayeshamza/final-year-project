@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amp_light_gray"
+    tools:context=".ScheduleCommonSlots">
+
+    <include
+        android:id="@+id/include6"
+        layout="@layout/toolbar_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include6">
+
+
+        <TextView
+            android:id="@+id/TD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewHorizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/linearDay"
+            android:layout_toLeftOf="@+id/linearDay"
+            android:gravity="center"
+            android:text="T/D"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/viewVertical"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewHorizontalEnd"
+            android:layout_toRightOf="@+id/timeLayout"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/viewHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linearDay"
+            android:background="@color/black"
+
+            />
+
+        <View
+            android:id="@+id/viewHorizontalEnd"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/timeLayout"
+            android:background="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/linearDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_toEndOf="@+id/viewVertical"
+            android:layout_toRightOf="@+id/viewVertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/weekDaysList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewHorizontal"
+
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/timeSlotList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/checkBoxLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewHorizontalEnd"
+            android:layout_below="@id/linearDay"
+            android:layout_toStartOf="@+id/relativeLayout"
+            android:layout_toLeftOf="@+id/relativeLayout"
+            android:layout_toEndOf="@id/viewVertical"
+            android:layout_toRightOf="@id/viewVertical"
+            tools:ignore="NotSibling">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/list1"
+                android:layout_toRightOf="@id/list1"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/list2"
+                android:layout_toRightOf="@id/list2"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/list3"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/list4"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/list5"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/textBoxList7"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/list6"
+                android:layout_toRightOf="@id/list6"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/offlineVenue"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_designing"
+        android:drawableLeft="@drawable/offline_address"
+        android:drawablePadding="10dp"
+        android:hint="Enter Venue Address"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <Button
+        android:id="@+id/saveFinalSlotBtn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:drawableLeft="@drawable/final_slot"
+        android:text="Save Meeting Slot"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offlineVenue"
+        app:layout_constraintVertical_bias="0.352" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
